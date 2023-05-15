@@ -10,7 +10,11 @@ const PantsPage = ({ params }: Props) => {
   if (params.slug === "nothing") {
     notFound();
   }
-  return <h1>{params.slug}page!!</h1>;
+  return (
+    <>
+      <h1>{params.slug}page!!</h1>
+    </>
+  );
 };
 export default PantsPage;
 
